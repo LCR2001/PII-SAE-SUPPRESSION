@@ -1,0 +1,2 @@
+n_cells,n_rand_dominant_lp,n_sel_dominant_lp,n_sel_ge_p95_of_rand_lp,n_sel_le_p50_of_rand_lp,n_failure_mode_A
+36,10,26,12,10,10

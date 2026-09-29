@@ -1,0 +1,5 @@
+model,layer,pii_type,selected_feat,alpha,K_sampled,sel_delta_lp_mean,sel_delta_br_mean,rand_lp_mean,rand_lp_median,rand_lp_std,rand_lp_min,rand_lp_max,rand_lp_p5,rand_lp_p95,rand_br_mean,rand_br_median,rand_br_std,rand_br_p5,rand_br_p95,pct_sel_in_rand_null_lp,pct_sel_in_rand_null_br,n_rand_more_suppressive_lp,n_sel_more_suppressive_lp
+llama3_1_8b_instruct,24,name,4823,-2.0,20,-0.475567,0.788621,0.025578,0.013487,0.061956,-0.676508,0.352709,-0.032636,0.124554,0.029958,0.0,0.084247,-0.046456,0.176107,99.9,99.9,0,20
+llama3_1_8b_instruct,24,id,25245,-2.0,20,-0.217879,0.194822,0.000549,0.005282,0.182784,-0.750892,0.570753,-0.311001,0.297941,-0.030869,-0.023357,0.276536,-0.511919,0.389975,88.3,81.8,0,20
+llama3_1_8b_instruct,24,phone,5682,-2.0,20,-0.00646,0.02,-0.0,0.0,6e-06,-0.000156,2e-06,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,0,20
+llama3_1_8b_instruct,24,email,26877,-2.0,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,0,20

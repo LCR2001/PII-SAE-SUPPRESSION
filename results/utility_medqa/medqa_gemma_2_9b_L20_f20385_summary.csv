@@ -1,0 +1,4 @@
+mode,accuracy,n
+baseline,0.605,200
+target,0.345,200
+random,0.29,200

@@ -1,0 +1,5 @@
+mode,accuracy,n
+baseline,0.715,200
+target,0.485,200
+random,0.565,200
+random_sae_dec,0.575,200
