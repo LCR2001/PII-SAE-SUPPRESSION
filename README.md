@@ -1,5 +1,12 @@
 # PII Leakage Suppression via Task-Specific SAE Intervention
 
+### Authors
+- Chaerin Lee, Wonho Lee
+
+This repository contains the code and experimental results
+for our research on PII leakage suppression via
+task-specific SAE intervention.
+
 Code and results for the paper:
 > **"Suppressing PII Leakage in Fine-Tuned LLMs via Task-Specific Sparse Autoencoder Intervention"**
 
