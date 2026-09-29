@@ -207,6 +207,28 @@ Intervention at hero feature with α=−2 preserves downstream task accuracy wit
 
 ---
 
+## Reproducibility
+
+This repository contains the full experiment code, and the pipeline can be reproduced by following the steps in [Execution Order](#execution-order). Three artifacts are **not included** and must be prepared separately:
+
+| Artifact | How to obtain |
+|----------|---------------|
+| Base model weights | Download from Hugging Face: Gemma-2-9B, Llama-3.1-8B-Instruct, Qwen3-8B |
+| LoRA adapter checkpoints | Train with `scripts/finetune_lora.py` (Step 1) |
+| Task-specific SAE checkpoints | Train TopK SAEs on the fine-tuned models (Step 2) |
+
+The LoRA adapters and SAE weights are excluded because they range from hundreds of MB to several GB. We plan to release them separately on the Hugging Face Hub.
+
+### Inspecting results without running anything
+
+All reported results are already included:
+
+- `results/figures_final/` — all paper figures (PDF + PNG)
+- `results/random_sae_decoder_control/` — per-cell CSVs for the random SAE decoder control
+- `results/utility_*/` — MMLU / MedQA / PubMedQA summaries
+
+---
+
 ## Data
 
 `data/pairs_test.jsonl` and `data/profile_registry_test.jsonl` contain **synthetically generated** patient profiles. Names, IDs, phone numbers, and emails are algorithmically generated and do not correspond to real individuals. Raw Synthea output used as clinical note templates is not included due to size; run `data/generate_registry.py` to regenerate.
