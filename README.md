@@ -1,7 +1,22 @@
 # PII Leakage Suppression via Task-Specific SAE Intervention
 
-### Authors
-- Chaerin Lee, Wonho Lee
+<p align="center">
+  <b>Chaerin Lee</b><sup>*</sup> &nbsp;·&nbsp;
+  <b>Wonho Lee</b><sup>*</sup> &nbsp;·&nbsp;
+  <b>Sohee Park</b> &nbsp;·&nbsp;
+  <b>Daeseon Choi</b>
+  <br>
+  🏫 <i>Soongsil University</i>
+  <br>
+  <sub>
+    ✉️ <code>{chaerin1112, hoho0907, sosohi}@soongsil.ac.kr</code>, <code>sunchoi@ssu.ac.kr</code>
+  </sub>
+  <br>
+  <sub><sup>*</sup> Equal contribution</sub>
+</p>
+
+## 📢 News
+- **[2026-09]** Our paper has been accepted to **Findings of AACL-IJCNLP 2026**! 🎉
 
 This repository contains the code and experimental results
 for our research on PII leakage suppression via
@@ -15,6 +30,15 @@ We identify PII-encoding features in task-specific Sparse Autoencoders (SAEs) tr
 **Models evaluated**: Gemma-2-9B, Llama-3.1-8B-Instruct, Qwen3-8B  
 **PII types**: patient name, ID, phone, email  
 **Key result**: Top-1 SAE feature suppression reduces PII log-probability by 3–6 nats while preserving downstream utility (MMLU / MedQA / PubMedQA accuracy within ±2%).
+
+<p align="center">
+  <img src=".figure/main.png" alt="Main diagnostic results across 36 cells" width="100%">
+</p>
+
+**Figure.** Main diagnostic results across 36 (model, layer, PII type) cells.
+**(a)** Number of cells passing single-metric vs. multi-metric criteria.
+**(b, c)** Per-template $\Delta_{lp}$ for selected feature vs. coherence-matched random control.
+**(d)** $|\Delta_{lp}|$ per PII type in Llama L8, where f=16363 is selected for all four types.
 
 ---
 
@@ -245,9 +269,10 @@ All reported results are already included:
 ## Citation
 
 ```bibtex
-@article{xxx2025pii,
-  title   = {Suppressing PII Leakage in Fine-Tuned LLMs via Task-Specific Sparse Autoencoder Intervention},
-  author  = {xxx},
-  year    = {2025},
+@inproceedings{lee-lee-2026-suppressing,
+  title     = {Suppressing PII Leakage in Fine-Tuned LLMs via Task-Specific Sparse Autoencoder Intervention},
+  author    = {Lee, Chaerin and Lee, Wonho and Park, Sohee and Choi, Daeseon},
+  booktitle = {Findings of the Association for Computational Linguistics: AACL-IJCNLP 2026},
+  year      = {2026},
 }
 ```
