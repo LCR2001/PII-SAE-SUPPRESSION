@@ -1,4 +1,5 @@
-# PII Leakage Suppression via Task-Specific SAE Intervention
+# Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs
+
 
 <p align="center">
   <b>Chaerin Lee</b><sup>*</sup> &nbsp;·&nbsp;
